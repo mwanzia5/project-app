@@ -1,8 +1,9 @@
 import React  from "react";
-import Home from "./Home";
-import Navbar from "./Navbar";
-import Display from "./ Display";
+import Home from "./pages/Home";
+import Navbar from "./Components/Navbar";
+import Order from "./pages/Order";
 import { Container } from "react-bootstrap";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -10,10 +11,14 @@ function App() {
     <div>
        
       
-      <Home/>
-      <Navbar/>
-      <Display/>
       
+      <Navbar/>
+      
+         <Routes>
+              <Route path="/" element={<Home/>}> </Route>
+              
+              <Route path="order" element={<Order/>}></Route>
+         </Routes>
   
         
     </div>
