@@ -18,15 +18,14 @@ function Navbar() {
                         <Button onClick={(addEventListener )}>
                           <SearchIcon/>
                         </Button>
-                               <Input placeholder='Search for Cake' size='md' />
-                <Button>
-                 <CalendarIcon w={8} h={6}/>
-                 </Button>
-
+                  
                  <HStack>
                      <Link to ={'/'}> Home</Link>
                      <Link to ={'/order'}>order</Link>
                  </HStack>
+                 <Button>
+                  <CalendarIcon/>
+                 </Button>
             </HStack>
           </Flex>
    </Box>
